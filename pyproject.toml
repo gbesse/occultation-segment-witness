@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "occultation-segment-witness"
+version = "0.1.0a1"
+description = "FR: Trouver les liaisons coupées par un corps sphérique | EN: Find links blocked by a spherical body | ES: Encontrar enlaces bloqueados por un cuerpo esférico"
+requires-python = ">=3.11"
+license = "MIT"
+
+[project.scripts]
+occultation-segment-witness = "occultation_segment_witness.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["occultation_segment_witness*"]
